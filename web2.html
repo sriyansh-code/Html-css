@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sriyansh</title>
+
+
+    <style>
+        .myForm {
+            margin-left: 570px;
+            font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+            font-size: 0.8em;
+            width: 28em;
+            border: 1px solid #ccc;
+            border-radius: 8px 8px 8px 8px;
+        }
+
+        .myForm * {
+            box-sizing: border-box;
+        }
+
+        .myForm fieldset {
+            border: none;
+            padding: 0;
+
+        }
+
+        .myForm legend,
+        .myForm label {
+            padding: 0;
+            font-weight: bold;
+        }
+
+        input[type=text], select {
+        width: 100%;
+        padding: 8px 15px;
+        margin: px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        }
+
+        .myForm select,
+        .myForm textarea {
+            width: 100%;
+        padding: 8px 15px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        }
+
+      
+        .myForm button {
+            
+            border-radius: 0.5em;
+            background: rgb(7, 204, 161);;
+            border: none;
+            font-weight: bold;
+            margin-top: 3px;
+            margin-left: 40px;
+            height:40px;
+            width: 80px;
+        }
+
+        .myForm button:hover {
+            background: #ccc;
+            cursor: pointer;
+        }
+
+        .myForm select.Operating_System {
+            background-color: rgb(7, 204, 161);
+        }
+
+        .myForm select.Product {
+            background-color: rgb(7, 204, 161);
+        }
+
+        .myForm select.Severity {
+            background-color: rgb(7, 204, 161);
+        }
+
+        .div {
+            width: 300px;
+            height: 100px;
+            border: 0px;
+            box-sizing: border-box;
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            padding-left: 1em;
+            height: 60px;
+            border-radius: inherit;
+            background-color: rgb(187, 187, 187);
+        }
+
+        .footer {
+            display: flex;
+            align-items: center;
+            padding-left: 18em;
+            height: 60px;
+            background-color: rgb(221, 221, 221);
+            border-radius: 8px;
+        }
+
+        .footer botton {
+            margin-bottom: 12px;
+            margin-right: 20px;
+        }
+
+        .content {
+            padding: 1em;
+        }
+    </style>
+
+</head>
+
+<body>
+<h1 style="color: rgb(7, 204, 161); display: inline-block; font-family:Arial, Helvetica, sans-serif; font-weight: lighter;" >TO THE NEW</h1>
+
+<span style="display: inline-block; color: rgb(7, 204, 161); margin-left: 1100px; padding: 5px;">Home</span>
+<span style="display: inline-block; color: rgb(7, 204, 161); margin-left: 0px; padding: 5px;">Quick Help</span>
+<hr style="color: #ccc;">
+<form class="myForm">
+        <div class="header">
+            <h2 style="color: white; font-family: Arial, Helvetica, sans-serif; font-weight: 550;">Bug Report</h2>
+        </div>
+        <div class="content">
+            <p>
+                <label style="font-family: Arial, Helvetica, sans-serif;">Title:*</label>
+                <br>
+                <input type="text" required>
+            </p>
+
+            <p>
+                <label style="font-family: Arial, Helvetica, sans-serif;">Description:*</label>
+                <textarea rows="4" required></textarea>
+            </p>
+
+            <p>
+                <label style="font-family: Arial, Helvetica, sans-serif;">Operating System:
+                    <select style="color: white;" class="Operating_System" name="Operatng System">
+                        <option value="windowsxp">Windows XP</option>
+                        <option value="windows10">Windows 10</option>
+                        <option value="windows10">Windows 8</option>
+                        <option value="windows10">Windows Vista</option>
+                        <option value="windows10">Ubuntu</option>
+                    </select>
+
+                </label>
+            </p>
+
+            <p>
+                <label style="font-family: Arial, Helvetica, sans-serif;">Product:*
+                    <select style="color: white;" class="Product" name="product">
+                        <option value="Formoid" selected="selected">Formoid</option>
+                        <option value="JotForm">JotForm</option>
+                        <option value="bootsnip">Bootsnip</option>
+                        <option value="simfatic">Simfatic</option>
+                    </select>
+                </label>
+            </p>
+
+            <p>
+                <label>Version:*</label>
+                <br>
+                <input style="width: 150px;" type="text">
+            </p>
+
+            <label>License:</label>
+            <br>
+            <input type="radio" name="r" value="Free">
+            <label for="Free">Free</label> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            <input type="radio" name="r" value="Business">
+            <label for="Business">Business</label><br>
+            <p>
+                <label> Severity:
+                    <select style="color: white;" class="Severity" name="severity">
+                        <option value="Critical" selected="selected">Critical</option>
+                        <option value="Easy">Easy</option>
+                        <option value="Hard">Hard</option>
+                    </select>
+                </label>
+            </p>
+
+            <div class="form-group">
+                <label>Attachment:</label><br>
+                <input type="file">
+            </div>
+        </div>
+        <div class="footer">
+            <p><button style="color: white;" type="submit">Send</button></p>
+        </div>
+    </form>
+
+</body>
+
+</html>
